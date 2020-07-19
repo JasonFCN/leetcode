@@ -63,6 +63,7 @@ public class Client {
                 writer.close();
             }
             writer = null;
+            s.close();
         }
     }
     
