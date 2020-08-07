@@ -1,10 +1,8 @@
 package com.cwj.leetcode;
 
-import java.util.BitSet;
-
 public class SingleNumber260 {
     public static void main(String[] args) {
-        int[] arr = singleNumber(new int[]{1,2,1,3,2,5});
+        int[] arr = singleNumber(new int[] { 1, 2, 1, 3, 2, 5 });
         System.out.println(arr[0]);
         System.out.println(arr[1]);
     }
@@ -24,5 +22,5 @@ public class SingleNumber260 {
         }
         return new int[] { x, bitmask ^ x };
     }
-    
+
 }
