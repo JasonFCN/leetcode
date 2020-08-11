@@ -9,6 +9,15 @@ public class MajorityElement169 {
     }
 
     public static int majorityElement(int[] nums) {
-        return 0;
+        // 投票算法
+        int count = 0;
+        int target = 0;
+        for (int i = 0; i < nums.length; i++) {
+            if(count==0){
+                target = nums[i];
+            }
+            count += target==nums[i] ? 1 : -1;
+        }
+        return target;
     }
 }

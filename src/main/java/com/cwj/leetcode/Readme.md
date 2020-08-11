@@ -22,3 +22,6 @@ seen_twice = ~seen_once & (seen_twice ^ x);
 
 seen_once 为 0;
 
+3, 字母大小写转换：
+char a = 'A';
+a ^= (1 << 5);

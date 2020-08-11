@@ -3,8 +3,6 @@ package com.cwj.leetcode;
 public class FindTheDifference389 {
     public static void main(String[] args) {
         System.out.println(findTheDifference3("abdef", "abdegf"));
-        String a = "你好abc";
-        String s = new String(a.getBytes());
     }
     public static char findTheDifference(String s, String t) {
         char c = 0;
